@@ -1,0 +1,94 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Game Board - Fully Responsive */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjusts to screen size */
+    gap: 10px;
+    justify-content: center;
+    max-width: 90vw; /* Prevents horizontal scrolling */
+    margin: 20px auto;
+}
+
+/* Card Container */
+.card {
+    width: 100%;
+    aspect-ratio: 1; /* Keeps cards square */
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+/* Inner Flipping Animation */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Flip Animation */
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Card Front & Back Styles */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+/* Card Face Colors */
+.card-front {
+    background-color: #ff007f;
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    background-color: #00ffff;
+}
+
+/* Button Styling */
+button {
+    background: #0b3d91;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+    button:hover {
+        background: #00ffff;
+    }
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    #game-board {
+        grid-template-columns: repeat(3, 1fr); /* Keeps a clean 3-column layout */
+        width: 95vw; /* Uses most of the screen width */
+    }
+
+    .card {
+        border-radius: 3px;
+    }
+}
