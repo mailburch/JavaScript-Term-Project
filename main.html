@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam's Game Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="gradient-title">Liam's Game Hub</h1>
+    </header>
+
+    <!-- Tab Navigation -->
+    <div class="tab-container">
+        <button class="tab-button active" onclick="openTab(event, 'about')">About</button>
+        <button class="tab-button" onclick="openTab(event, 'blackjack')">Blackjack</button>
+        <button class="tab-button" onclick="openTab(event, 'puzzle')">Mix & Match Puzzle</button>
+        <button class="tab-button" onclick="openTab(event, 'memory')">Memory Card Game</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content-container">
+        <div id="about" class="tab-content active">
+            <h2>About This Project</h2>
+            <p>Click the button below to view or download the README file.</p>
+            <a href="readme.txt" target="_blank">
+                <button class="download-button">View README</button>
+            </a>
+        </div>
+        <div id="blackjack" class="tab-content">
+            <iframe src="blackjack.html"></iframe>
+        </div>
+        <div id="puzzle" class="tab-content">
+            <iframe src="puzzle.html"></iframe>
+        </div>
+        <div id="memory" class="tab-content">
+            <iframe src="memory.html"></iframe>
+        </div>
+    </div>
+
+    <script src="js/tabs.js"></script>
+</body>
+</html>
