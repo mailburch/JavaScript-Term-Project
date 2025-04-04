@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Block</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(to bottom, #4A90E2, #87CEEB);
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px #333;
+        }
+
+        button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 15px;
+            margin: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+            button:hover {
+                background-color: #ff9900;
+            }
+
+        canvas {
+            display: block;
+            margin: auto;
+            border: 4px solid black;
+            background-color: #70c5ce;
+        }
+
+        footer {
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flappy Block</h1>
+    <canvas id="myCanvas"></canvas>
+    <br>
+    <button id="startButton">Start Game</button>
+    <button id="jumpButton" style="display:none;">Jump</button>
+    <button id="restartButton" onclick="location.reload()" style="display:none;">Restart</button>
+    <footer>
+    2024 Liam Burch | All code, graphics, and sounds were created by me.
+</footer>
+    <script src="js/canvasGame.js"></script>
+</body>
+</html>
