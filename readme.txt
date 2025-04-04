@@ -16,6 +16,7 @@ Final Project/
 |-- blackjack.html
 |-- puzzle.html
 |-- memory.html
+|-- canvasGame.html
 |-- css/
 |   |-- style.css (Global styles)
 |   |-- blackjack.css (Blackjack styles)
@@ -26,9 +27,12 @@ Final Project/
 |   |-- blackjack.js (Blackjack game logic)
 |   |-- puzzle.js (Puzzle game logic)
 |   |-- memory.js (Memory game logic)
+|   |-- canvasGame.js (Flappy block logic)
 |-- media/
 |   |-- blackjack-cards/ (Custom card images)
 |   |-- puzzle-image.png (Puzzle background)
+|   |-- background-music.mp3
+|   |-- game-over.mp3
 
 ------------------------------
      CONTACT INFORMATION
